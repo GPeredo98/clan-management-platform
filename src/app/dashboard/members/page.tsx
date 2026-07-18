@@ -1,6 +1,8 @@
 import { getClanInfo } from '@/core/api/coc-service';
 import { Member } from '@/core/api/interfaces/member.interface';
 
+export const dynamic = 'force-dynamic';
+
 export default async function MiembrosPage() {
   const clanData = await getClanInfo();
 

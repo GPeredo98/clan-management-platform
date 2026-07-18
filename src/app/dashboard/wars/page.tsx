@@ -4,6 +4,8 @@ import { CocApiRepository } from "@/core/infraestructure/repositories/coc-api.re
 import { CurrentWarInfoUseCase } from "@/core/use-cases/current-war-info.use-case";
 import { GetPendingToAttackMembersUseCase } from "@/core/use-cases/get-pending-to-attack-members.use-case";
 
+export const dynamic = 'force-dynamic';
+
 export default async function WarsPage() {
 	const cocApiRepository = new CocApiRepository();
 	const getPendingToAttackMembersUseCase = new GetPendingToAttackMembersUseCase(cocApiRepository);
