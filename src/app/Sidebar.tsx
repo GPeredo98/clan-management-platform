@@ -5,9 +5,10 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navItems = [
-	{ href: "/dashboard", label: "Dashboard" },
 	{ href: "/dashboard/members", label: "Members" },
 	{ href: "/dashboard/wars", label: "Current war" },
+	{ href: "/dashboard/capital-assaults", label: "Capital assaults" },
+	{ href: "/dashboard/league-tops", label: "League tops" },
 ];
 
 function NavLinks({

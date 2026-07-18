@@ -52,7 +52,7 @@ ${pendingToAttackMembers.oneAttackPending.length > 0
 				<p className="mt-2 text-sm text-slate-300 sm:text-base">{winnerLabel}</p>
 			</header>
 
-			<section className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+			<section className="hidden md:grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
 				<div className="rounded-lg bg-slate-900 p-4 shadow-sm ring-1 ring-slate-800 transition-transform duration-200 hover:-translate-y-0.5">
 					<p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Estado</p>
 					<p className="mt-2 text-lg font-semibold text-slate-100">{WAR_STATE_LABELS[currentWarInfo.state] || currentWarInfo.state}</p>
